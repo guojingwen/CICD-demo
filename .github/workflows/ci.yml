@@ -24,4 +24,4 @@ jobs:
             git pull &&
             pnpm i &&
             npm run build &&
-            cp -r ./dist  /home/ubuntu/myDockerFiles/nginx/html/static/CICD-demo
+            cp -r ./dist/*  /home/ubuntu/myDockerFiles/nginx/html/static/CICD-demo
