@@ -10,7 +10,6 @@
     "build": "webpack --config ./config/webpack.common.js --env production",
     "serve": "webpack serve --config ./config/webpack.common.js --env development",
     "lint": "eslint --ext .js,.ts --quiet src --fix && npx lint-staged",
-    "prepare": "husky install",
     "test": "jest"
   },
   "pre-commit": [
@@ -51,7 +50,6 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-webpack-plugin": "^4.0.1",
     "html-webpack-plugin": "^5.5.3",
-    "husky": "^8.0.3",
     "jest-environment-jsdom": "^29.7.0",
     "lint-staged": "^14.0.1",
     "mini-css-extract-plugin": "^2.7.6",
