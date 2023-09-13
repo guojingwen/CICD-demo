@@ -10,3 +10,4 @@ document.body.appendChild(comp);
 console.log(texts.join(' '));
 
 console.log(add(1, 2));
+console.log('done');

@@ -9,9 +9,12 @@
     "type-check-watch": "tsc --noEmit --watch",
     "build": "webpack --config ./config/webpack.common.js --env production",
     "serve": "webpack serve --config ./config/webpack.common.js --env development",
-    "lint": "npx lint-staged",
+    "lint": "eslint --ext .js,.ts --quiet src --fix && npx lint-staged",
     "prepare": "husky install"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "lint-staged": {
     "*.{js,ts}": [
       "prettier --write",
@@ -19,9 +22,6 @@
     ],
     "*.css": "stylelint --fix"
   },
-  "pre-commit": [
-    "lint"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/guojingwen/CICD-demo.git"
