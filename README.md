@@ -15,4 +15,3 @@
 - [x] 配置`push`到`main`分支才触发`workflow`，连接服务器、拉代码、打包、部署。
 
 [使用GithubActions实现CICD流程](https://blog.warmplace.cn/post/github-actions)
-

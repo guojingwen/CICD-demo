@@ -16,9 +16,10 @@
     "lint"
   ],
   "lint-staged": {
+    "*.{js,ts,html,md}": [
+      "prettier --write"
+    ],
     "*.{js,ts}": [
-      "prettier --write",
-      "eslint --ext .js,.ts src --fix",
       "jest --bail --passWithNoTests --findRelatedTests"
     ],
     "*.css": "stylelint --fix"
