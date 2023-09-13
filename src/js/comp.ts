@@ -1,7 +1,7 @@
 function createComp(
   tag = 'div',
   attrs = {} as { [key: string]: string },
-  children = '' as string | Array<any>
+  children = '' as string | Array<any>,
 ) {
   const ele = document.createElement(tag);
   Object.entries(attrs).forEach(([k, v]) => {
