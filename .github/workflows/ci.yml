@@ -15,4 +15,9 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          script: cd /home/ubuntu/github && echo hello >> b.txt
+          script: |
+            cd /home/ubuntu/github/CICD-demo
+            git pull
+            pnpm i
+            npm run build
+            cp -r ./dist  /home/ubuntu/myDockerFiles/nginx/html/static/CICD-demo
