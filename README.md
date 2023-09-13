@@ -13,3 +13,6 @@
 - [x] 单元测试采用 `jest`
 - [x] 通过`lint-staged`工具配置了`pre-commit`检查，提交代码前会格式化代码然后执行单元测试，只有执行通过才能`commit`
 - [x] 配置`push`到`main`分支才触发`workflow`，连接服务器、拉代码、打包、部署。
+
+[使用GithubActions实现CICD流程](https://blog.warmplace.cn/post/github-actions)
+
