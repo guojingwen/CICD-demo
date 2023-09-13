@@ -1,4 +1,4 @@
-name: remote ssh command
+name: test ssh command
 on:
   push:
     branches:
@@ -15,4 +15,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          script: cd /home/ubuntu/github && touch a.txt
+          script: cd /home/ubuntu/github && echo hello >> b.txt
