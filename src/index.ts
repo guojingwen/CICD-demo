@@ -7,6 +7,6 @@ const texts: Array<string> = ['hello', 'CICD'];
 const comp = createComp('h2', { class: 'content' }, texts.at(-1));
 document.body.appendChild(comp);
 
-console.log(texts.join('  '));
+console.log(texts.join(' '));
 
 console.log(add(1, 2));
