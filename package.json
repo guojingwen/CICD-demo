@@ -22,7 +22,7 @@
     "*.{js,ts}": [
       "jest --bail --passWithNoTests --findRelatedTests"
     ],
-    "*.{css,scss}": "stylelint --fix"
+    "**/*.{css,scss}": "stylelint --fix"
   },
   "repository": {
     "type": "git",
