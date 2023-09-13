@@ -1,5 +1,6 @@
 .content {
-  border  : 10px solid red;
-background-color:    #fee;
-  font-size:30px;
+  border: 10px solid red;
+  background-color: #fee;
+  font-size: 30px;
+  margin: 0;
 }

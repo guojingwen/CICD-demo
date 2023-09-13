@@ -1,4 +1,5 @@
 $size: 200px;
+
 .big-img {
   background-image: url('../img/295.png');
   background-size: contain;
@@ -8,10 +9,12 @@ $size: 200px;
   background-color: #12345678;
   margin: 0 20px;
 }
+
 body > img {
   height: $size;
   width: $size;
 }
+
 .icon-ashbin {
   font-size: 40px;
 }
