@@ -3,6 +3,10 @@ test('测试add', () => {
   expect(add(2, 3)).toBe(5);
 });
 
+test('测试add', () => {
+  expect(add(2, 5, 3)).toBe(10);
+});
+
 test('测试muti', () => {
   expect(muti(2, 3)).toBe(6);
 });
