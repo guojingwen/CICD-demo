@@ -1,3 +1,5 @@
+const prettierConfig = require("./.prettierrc.json")
+
 module.exports = {
   env: {
     browser: true,
@@ -13,8 +15,7 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   rules: {
-    'prettier/prettier': 'error',
-    'no-undef': 'error',
-    '@typescript-eslint/no-explicit-any': 'off',
+    'prettier/prettier': ['error', prettierConfig],
+    '@typescript-eslint/no-explicit-any': 0
   },
 };

@@ -1,9 +1,9 @@
 $size: 200px;
 
-.big-img  {
-    background-image: url("../img/295.png");
-    background-size : contain ;
-  height : $size;
+.big-img {
+  background-image: url('../img/295.png');
+  background-size: contain;
+  height: $size;
   width: $size;
   display: inline-block;
   background-color: #12345678;

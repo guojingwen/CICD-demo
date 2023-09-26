@@ -16,13 +16,12 @@
     "lint"
   ],
   "lint-staged": {
-    "*.{js,ts,html,md}": [
+    "*.{css,scss,html,md}": [
       "prettier --write"
     ],
     "*.{js,ts}": [
       "jest --bail --passWithNoTests --findRelatedTests"
-    ],
-    "src/css/*.{css,scss}": "stylelint --fix"
+    ]
   },
   "repository": {
     "type": "git",
@@ -61,10 +60,6 @@
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
-    "stylelint": "^15.10.3",
-    "stylelint-config-prettier": "^9.0.5",
-    "stylelint-config-standard": "^34.0.0",
-    "stylelint-config-standard-scss": "^11.0.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2",
     "webpack": "^5.88.2",
