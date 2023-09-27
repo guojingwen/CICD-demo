@@ -9,6 +9,7 @@ test('测试add', () => {
 
 test('测试muti', () => {
   expect(muti(2, 3)).toBe(6);
+  expect(muti(4, 6, 2)).toBe(48);
 });
 
 test('测试number', () => {
