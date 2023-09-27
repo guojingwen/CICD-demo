@@ -1,0 +1,17 @@
+/* stylelint check */
+.app {
+  /* 有疑问的东西，例如重复选择器 */
+  /* stylelint-disable-next-line no-duplicate-selectors */
+  a {
+    --foo: 1rem; /* 强制命名模式，例如对于自定义属性采用短横线 */
+    --bar-bar: 2rem;
+    width: 20rem; /*  禁止某些规则，例如具体某个单位 */
+    height: 10rem;
+  }
+
+  /* 设定限制，例如ID选择器的数量 */
+  /* stylelint-disable-next-line selector-max-id */
+  #foo #bar {
+    color: red;
+  }
+}

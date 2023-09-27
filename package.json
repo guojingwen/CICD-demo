@@ -13,15 +13,12 @@
     "test": "jest",
     "prepare": "husky install"
   },
-  "pre-commit": [
-    "lint"
-  ],
   "lint-staged": {
-    "**/*.{css,scss,html,md}": [
-      "prettier --write"
+    "src/**/*.{css,scss,html,md}": [
+      "prettier --write src/**/*.{css,scss,html,md}"
     ],
-    "**/*.{js,ts}": [
-      "eslint --ext .js,.ts --quiet src",
+    "src/**/*.{js,ts}": [
+      "eslint --ext .js,.ts --quiet src --fix",
       "jest --bail --passWithNoTests --findRelatedTests"
     ]
   },
