@@ -15,7 +15,8 @@
   },
   "lint-staged": {
     "src/**/*.{css,scss,html,md}": [
-      "prettier --write src/**/*.{css,scss,html,md}"
+      "prettier --write src/**/*.{css,scss,html,md}",
+      "stylelint --allow-empty-input src/**/*.{css,scss}"
     ],
     "src/**/*.{js,ts}": [
       "eslint --ext .js,.ts --quiet src --fix",
