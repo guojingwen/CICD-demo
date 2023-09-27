@@ -15,11 +15,11 @@
   },
   "lint-staged": {
     "src/**/*.{css,scss,html,md}": [
-      "prettier --write src/**/*.{css,scss,html,md}",
-      "stylelint --allow-empty-input src/**/*.{css,scss}"
+      "prettier --write",
+      "stylelint --allow-empty-input"
     ],
     "src/**/*.{js,ts}": [
-      "eslint --ext .js,.ts --quiet src --fix",
+      "eslint --ext .js,.ts --quiet --fix",
       "jest --bail --passWithNoTests --findRelatedTests"
     ]
   },
